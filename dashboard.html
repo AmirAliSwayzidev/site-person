@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حساب کاربری | امیرعلی</title>
+<link rel="stylesheet" href="/assest/css/style.css?v=20261028cart2">
+<link rel="shortcut icon" href="./pictures/icon.png" type="image/x-icon">
+<meta name="description" content="مدیریت سفارش‌ها و حساب کاربری در AMIRALI-SITE.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="canonical" href="https://amiraliswayzi.ir/dashboard">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMIRALI-SITE">
+<meta property="og:title" content="حساب کاربری | AMIRALI-SITE">
+<meta property="og:description" content="مدیریت سفارش‌ها و حساب کاربری در AMIRALI-SITE.">
+<meta property="og:url" content="https://amiraliswayzi.ir/dashboard">
+<meta property="og:image" content="https://amiraliswayzi.ir/assest/img/hero-showcase.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="حساب کاربری | AMIRALI-SITE">
+<meta name="twitter:description" content="مدیریت سفارش‌ها و حساب کاربری در AMIRALI-SITE.">
+<meta name="theme-color" content="#07120e">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="/index.html" class="brand"><span class="dot"></span>امیرعلی<small>&nbsp;dev</small></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/shop.html">فروشگاه</a></li>
+      <li><a href="/request.html">درخواست پروژه</a></li>
+    </ul>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="منو" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+    <div class="nav-cta">
+      <a href="/checkout.html" class="btn btn-ghost btn-sm nav-cart-btn">سبد خرید<span class="cart-badge" id="cartCount" style="display:none">0</span></a>
+      <span id="navAuth" style="display:flex; gap:10px;"></span>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay" hidden></div>
+
+
+<div class="wrap dash">
+  <aside class="dash-side">
+    <div class="card dash-user">
+      <div class="avatar" id="avatarInit">؟</div>
+      <b id="userName">کاربر</b>
+      <div class="hint" id="userEmail" style="direction:ltr;"></div>
+    </div>
+    <nav class="card dash-nav" style="padding:10px;">
+      <a href="#" class="active" data-panel="overview">نمای کلی</a>
+      <a href="#" data-panel="orders">سفارش‌های من</a>
+      <a href="#" data-panel="requests">درخواست‌های پروژه</a>
+      <a href="#" data-panel="profile">پروفایل</a>
+      <a href="#" id="logoutLink">خروج از حساب</a>
+    </nav>
+  </aside>
+
+  <main>
+    <div class="dash-panel active" id="dp-overview">
+      <div class="stat-row">
+        <div class="card stat-box"><b id="statOrders">0</b><span>سفارش خریداری‌شده</span></div>
+        <div class="card stat-box"><b id="statRequests">0</b><span>درخواست پروژه ثبت‌شده</span></div>
+        <div class="card stat-box"><b id="statSpent">۰</b><span>مجموع خرید (تومان)</span></div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0;">خوش آمدید 👋</h3>
+        <p style="color:var(--text-dim);">از همین‌جا می‌توانید سفارش‌های ثبت‌شده از فروشگاه و وضعیت درخواست‌های پروژه‌تان را دنبال کنید.</p>
+        <div style="display:flex; gap:12px; margin-top:16px;">
+          <a href="/shop.html" class="btn btn-ghost btn-sm">رفتن به فروشگاه</a>
+          <a href="/request.html" class="btn btn-primary btn-sm">ثبت درخواست جدید</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-panel" id="dp-orders">
+      <div class="section-head" style="margin-bottom:20px;"><h2 style="font-size:1.3rem;">سفارش‌های من</h2></div>
+      <div id="ordersList"></div>
+    </div>
+
+    <div class="dash-panel" id="dp-requests">
+      <div class="section-head" style="margin-bottom:20px;"><h2 style="font-size:1.3rem;">درخواست‌های پروژه</h2></div>
+      <div id="requestsList"></div>
+    </div>
+
+    <div class="dash-panel" id="dp-profile">
+      <div class="card" style="max-width:480px;">
+        <h3 style="margin-top:0;">اطلاعات حساب</h3>
+        <div class="field"><label>نام و نام‌خانوادگی</label><input id="pfName" disabled></div>
+        <div class="field"><label>ایمیل</label><input id="pfEmail" disabled style="direction:ltr; text-align:left;"></div>
+        <div class="field"><label>شماره موبایل</label><input id="pfPhone" disabled style="direction:ltr; text-align:left;"></div>
+        <div class="field"><label>تاریخ عضویت</label><input id="pfJoined" disabled></div>
+        <p class="hint">در این نسخه نمایشی امکان ویرایش این اطلاعات فعلاً وجود ندارد.</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="/assest/js/app.js?v=20261028mobile"></script>
+<script src="/assest/js/dashboard.js?v=20260911"></script>
+</body>
+</html>

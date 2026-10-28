@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /auth
+Disallow: /checkout
+Disallow: /api/
+Disallow: /uploads/
+Sitemap: https://amiraliswayzi.ir/sitemap.xml

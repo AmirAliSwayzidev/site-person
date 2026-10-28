@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ورود و ثبت‌نام | امیرعلی</title>
+<link rel="stylesheet" href="/assest/css/style.css?v=20261028cart2">
+<link rel="shortcut icon" href="./pictures/icon.png" type="image/x-icon">
+<meta name="description" content="ورود، ثبت‌نام و بازیابی رمز عبور حساب کاربری AMIRALI-SITE.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="canonical" href="https://amiraliswayzi.ir/auth">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMIRALI-SITE">
+<meta property="og:title" content="ورود و ثبت‌نام | AMIRALI-SITE">
+<meta property="og:description" content="ورود، ثبت‌نام و بازیابی رمز عبور حساب کاربری AMIRALI-SITE.">
+<meta property="og:url" content="https://amiraliswayzi.ir/auth">
+<meta property="og:image" content="https://amiraliswayzi.ir/assest/img/hero-showcase.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ورود و ثبت‌نام | AMIRALI-SITE">
+<meta name="twitter:description" content="ورود، ثبت‌نام و بازیابی رمز عبور حساب کاربری AMIRALI-SITE.">
+<meta name="theme-color" content="#07120e">
+</head>
+<body class="auth-page">
+<nav class="nav">
+  <div class="wrap">
+    <a href="/" class="brand"><span class="dot"></span>امیرعلی<small>&nbsp;dev</small></a>
+    <ul class="nav-links" id="navLinks"><li><a href="/">خانه</a></li><li><a href="/shop">فروشگاه</a></li></ul>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="منو" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+    <div class="nav-cta"><span id="navAuth" class="nav-auth"></span></div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay" hidden></div>
+
+
+<main class="auth-shell">
+  <div class="auth-card card">
+    <div class="auth-brand-mark">✦</div>
+    <h1>حساب کاربری</h1>
+    <p class="auth-subtitle">وارد حساب‌تان شوید یا در چند مرحله یک حساب جدید بسازید.</p>
+
+    <div class="auth-tabs">
+      <button type="button" class="auth-tab active" data-tab="login">ورود</button>
+      <button type="button" class="auth-tab" data-tab="signup">ثبت‌نام</button>
+    </div>
+    <div class="auth-msg" id="authMsg" aria-live="polite"></div>
+
+    <section class="auth-panel active" id="panel-login">
+      <div class="field"><label for="loginEmail">ایمیل</label><input type="email" id="loginEmail" autocomplete="email" placeholder="you@example.com"></div>
+      <div class="field password-field"><label for="loginPass">رمز عبور</label><div class="password-wrap"><input type="password" id="loginPass" autocomplete="current-password" placeholder="رمز عبور"><button type="button" class="password-toggle" data-target="loginPass" aria-label="نمایش رمز">نمایش</button></div></div>
+      <button type="button" class="btn btn-primary btn-block" id="loginBtn">ورود به حساب</button>
+      <p class="auth-link-row"><a href="#" id="forgotPasswordLink">رمز عبور را فراموش کرده‌اید؟</a></p>
+    </section>
+
+    <section class="auth-panel" id="panel-signup">
+      <form class="auth-step active" id="signupForm" autocomplete="on">
+        <h2>ساخت حساب</h2>
+        <p class="hint">برای ثبت‌نام فقط اطلاعات زیر را وارد کنید؛ نیازی به تأیید ایمیل نیست.</p>
+        <div class="field"><label for="suName">نام و نام‌خانوادگی</label><input type="text" id="suName" autocomplete="name" placeholder="مثلاً امیرعلی رضایی"></div>
+        <div class="field"><label for="suPhone">شماره موبایل</label><input type="tel" id="suPhone" autocomplete="tel" placeholder="09xxxxxxxxx" dir="ltr"></div>
+        <div class="field"><label for="suEmail">ایمیل</label><input type="email" id="suEmail" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="field password-field"><label for="suPass">رمز عبور</label><div class="password-wrap"><input type="password" id="suPass" autocomplete="new-password" placeholder="حداقل ۸ کاراکتر"><button type="button" class="password-toggle" data-target="suPass">نمایش</button></div></div>
+        <div class="field password-field"><label for="suPassConfirm">تکرار رمز عبور</label><div class="password-wrap"><input type="password" id="suPassConfirm" autocomplete="new-password" placeholder="رمز را دوباره وارد کنید"><button type="button" class="password-toggle" data-target="suPassConfirm">نمایش</button></div></div>
+        <button type="button" class="btn btn-primary btn-block" id="completeSignupBtn">ساخت حساب</button>
+      </form>
+    </section>
+
+    <section class="auth-panel" id="panel-forgot">
+      <div class="auth-step active" id="forgotStepEmail">
+        <h2>بازیابی رمز عبور</h2><p class="hint">ایمیل حساب‌تان را وارد کنید تا کد بازیابی برایتان ارسال شود.</p>
+        <div class="field"><label for="forgotEmail">ایمیل</label><input type="email" id="forgotEmail" autocomplete="email" placeholder="you@example.com"></div>
+        <button type="button" class="btn btn-primary btn-block" id="sendResetCodeBtn">ارسال کد بازیابی</button>
+        <button type="button" class="btn btn-ghost btn-block" id="backToLoginBtn">بازگشت به ورود</button>
+      </div>
+      <div class="auth-step" id="forgotStepCode">
+        <h2>کد بازیابی</h2><p class="hint">کد ۵ رقمی ارسال‌شده به ایمیل را وارد کنید.</p>
+        <div class="field"><label for="resetCode">کد ۵ رقمی</label><input class="otp-input" type="text" id="resetCode" inputmode="numeric" maxlength="5" autocomplete="one-time-code"></div>
+        <button type="button" class="btn btn-primary btn-block" id="verifyResetCodeBtn">تأیید کد</button>
+        <button type="button" class="btn btn-ghost btn-block" id="backToResetEmailBtn">تغییر ایمیل</button>
+      </div>
+      <div class="auth-step" id="forgotStepPassword">
+        <h2>رمز جدید</h2><p class="hint">یک رمز قوی و حداقل ۸ کاراکتری انتخاب کنید.</p>
+        <div class="field password-field"><label for="newPass">رمز جدید</label><div class="password-wrap"><input type="password" id="newPass" autocomplete="new-password"><button type="button" class="password-toggle" data-target="newPass">نمایش</button></div></div>
+        <div class="field password-field"><label for="newPassConfirm">تکرار رمز جدید</label><div class="password-wrap"><input type="password" id="newPassConfirm" autocomplete="new-password"><button type="button" class="password-toggle" data-target="newPassConfirm">نمایش</button></div></div>
+        <button type="button" class="btn btn-primary btn-block" id="resetPasswordBtn">ذخیره رمز جدید</button>
+      </div>
+    </section>
+    <p class="security-note">🔒 اطلاعات ورود با روش امن ذخیره می‌شوند و کد تأیید پس از استفاده قابل استفاده مجدد نیست.</p>
+  </div>
+</main>
+<script src="/assest/js/app.js?v=20261028mobile"></script>
+<script src="/assest/js/auth.js?v=20260911"></script>
+</body>
+</html>

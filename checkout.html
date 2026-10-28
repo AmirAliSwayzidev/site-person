@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تکمیل سفارش |میرعلی</title>
+<link rel="stylesheet" href="/assest/css/style.css?v=20261028cart2">
+<link rel="shortcut icon" href="./pictures/icon.png" type="image/x-icon">
+<meta name="description" content="بررسی سبد خرید و ثبت سفارش در AMIRALI-SITE.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="canonical" href="https://amiraliswayzi.ir/checkout">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMIRALI-SITE">
+<meta property="og:title" content="تکمیل سفارش | AMIRALI-SITE">
+<meta property="og:description" content="بررسی سبد خرید و ثبت سفارش در AMIRALI-SITE.">
+<meta property="og:url" content="https://amiraliswayzi.ir/checkout">
+<meta property="og:image" content="https://amiraliswayzi.ir/assest/img/hero-showcase.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="تکمیل سفارش | AMIRALI-SITE">
+<meta name="twitter:description" content="بررسی سبد خرید و ثبت سفارش در AMIRALI-SITE.">
+<meta name="theme-color" content="#07120e">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="/index.html" class="brand"><span class="dot"></span>امیرعلی<small>&nbsp;dev</small></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/index.html#services">خدمات</a></li>
+      <li><a href="/shop.html">فروشگاه</a></li>
+      <li><a href="/request.html">درخواست پروژه</a></li>
+    </ul>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="منو" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+    <div class="nav-cta">
+      <a href="/checkout.html" class="btn btn-ghost btn-sm nav-cart-btn">سبد خرید<span class="cart-badge" id="cartCount" style="display:none">0</span></a>
+      <span id="navAuth" style="display:flex; gap:10px;"></span>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay" hidden></div>
+
+
+<section class="section" style="padding-top:50px;">
+  <div class="wrap" id="checkoutWrap">
+
+    <div id="cartView">
+      <div class="section-head"><h2>سبد خرید و پرداخت</h2></div>
+      <div class="checkout-grid">
+        <div class="card" id="cartList"></div>
+        <div class="card">
+          <h3 style="margin-top:0;">روش پرداخت</h3>
+          <div class="gateway-option" data-gw="zarinpal" style="opacity:.55;cursor:not-allowed;">
+            <div class="gw-icon">ZP</div>
+            <div><b>زرین‌پال</b><div class="hint">پرداخت آنلاین با کارت‌های شتاب <span class="soon">بزودی</span></div></div>
+          </div>
+          <div class="gateway-option" data-gw="idpay" style="opacity:.55;cursor:not-allowed;">
+            <div class="gw-icon">ID</div>
+            <div><b>آیدی‌پی</b><div class="hint">درگاه جایگزین برای پرداخت آنلاین <span class="soon">بزودی</span></div></div>
+          </div>
+          <div class="gateway-option" data-gw="card">
+            <div class="gw-icon">▤</div>
+            <div><b>کارت‌به‌کارت</b><div class="hint">کارت به کارت <span class="on">فعال است</span></div></div>
+          </div>
+
+          <div id="cardPaymentBox" class="notice" style="margin-top:14px;display:none;">
+            <b>پرداخت کارت‌به‌کارت</b>
+            <p style="margin:10px 0 8px;">مبلغ سفارش را به کارت زیر واریز کنید:</p>
+            <div dir="ltr" style="font-size:1.15rem;font-weight:800;letter-spacing:1px;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--bg-panel-2);color:var(--gold);">
+              <span id="cardNumber">6104338920986953</span>
+            </div>
+            <div class="hint" style="margin-top:12px;line-height:1.9;">
+              بعد از واریز، <b>تصویر رسید را در تلگرام ارسال کنید:</b><br>
+              <span dir="ltr" style="font-weight:800;">@AmirAli_Swayzi</span><br>
+              برای احراز هویت، <b>ایمیل ثبت‌شده‌تان در سایت</b> را نیز همراه رسید ارسال کنید:
+              <span dir="ltr" style="font-weight:800;">amiralitk87@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="sum-row"><span>جمع سبد خرید</span><span id="sumSubtotal">۰ تومان</span></div>
+          <div class="sum-row"><span>مالیات بر ارزش افزوده</span><span>شامل قیمت</span></div>
+          <div class="sum-row total"><span>مبلغ قابل پرداخت</span><span id="sumTotal">۰ تومان</span></div>
+
+          <button class="btn btn-primary btn-block" id="payBtn" style="margin-top:16px;">ثبت سفارش و ارسال برای تأیید</button>
+
+          <div class="notice">
+            زرین‌پال و آیدی‌پی فعلاً <b>بزودی</b> هستند. در حال حاضر پرداخت فقط به‌صورت کارت‌به‌کارت انجام می‌شود
+            و سفارش پس از ثبت درخواست در وضعیت <b>در حال تأیید</b> قرار می‌گیرد.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="paidView" style="display:none;">
+      <div class="card paid-screen">
+        <div class="paid-check">✓</div>
+        <h2 style="margin:0 0 10px;">درخواست پرداخت ثبت شد</h2>
+        <p style="color:var(--text-dim); margin:0 0 26px;">شماره سفارش: <b id="orderId"></b> — سفارش شما ثبت شد و در وضعیت <b>در حال تأیید</b> قرار گرفت. پس از بررسی پرداخت، وضعیت سفارش به‌روزرسانی می‌شود.</p>
+        <div style="display:flex; gap:12px; justify-content:center;">
+          <a href="/dashboard.html" class="btn btn-primary">مشاهده در پنل کاربری</a>
+          <a href="/shop.html" class="btn btn-ghost">بازگشت به فروشگاه</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© ۱۴۰۵ امیرعلی. تمامی حقوق محفوظ است.</span>
+      <a href="/index.html">بازگشت به صفحه اصلی</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assest/js/app.js?v=20261028mobile"></script>
+<script src="/assest/js/checkout.js?v=20261028cart2"></script>
+</body>
+</html>

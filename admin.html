@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مدیریت سایت | امیرعلی</title><link rel="stylesheet" href="/assest/css/style.css?v=20261028cart2">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="description" content="مدیریت امن کاربران، سفارش‌ها، پیام‌ها و پرداخت‌های سایت.">
+</head>
+<body class="admin-page">
+<nav class="nav"><div class="wrap"><a href="/" class="brand"><span class="dot"></span>امیرعلی<small>&nbsp;admin</small></a>    <button type="button" class="nav-toggle" id="navToggle" aria-label="منو" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+    <div class="nav-cta"><a href="/dashboard" class="btn btn-ghost btn-sm">حساب کاربری</a><a href="/" class="btn btn-ghost btn-sm">مشاهده سایت</a><button id="logout" class="btn btn-primary btn-sm">خروج</button></div></div></nav>
+<div class="nav-overlay" id="navOverlay" hidden></div>
+
+<section class="section" style="padding-top:45px"><div class="wrap">
+<div class="section-head"><span class="kicker">مدیریت</span><h1>مرکز مدیریت سایت</h1><p>اطلاعات کاربران، سفارش‌ها، پیام‌ها و وضعیت پرداخت‌ها را از یکجا بررسی و مدیریت کنید.</p></div>
+<div class="grid-3" style="margin-bottom:24px">
+<div class="card stat-box"><b id="count">0</b><span>کل سفارش‌ها</span></div>
+<div class="card stat-box"><b id="pending">0</b><span>در انتظار بررسی</span></div>
+<div class="card stat-box"><b id="completed">0</b><span>سفارش تکمیل‌شده</span></div>
+<div class="card stat-box"><b id="usersCount">0</b><span>کاربر ثبت‌شده</span></div>
+<div class="card stat-box"><b id="contacts">0</b><span>پیام تماس</span></div>
+<div class="card stat-box"><b id="revenue">۰ تومان</b><span>پرداخت‌های موفق</span></div>
+</div>
+<div class="card" style="margin-bottom:24px">
+<h3>کاربران</h3><p class="hint">با «مشخصات کامل» می‌توانید اطلاعات حساب، سفارش‌ها، توضیحات پروژه، فایل‌های ضمیمه، پیام‌ها و سوابق پرداخت کاربر را یکجا ببینید.</p>
+<form id="createUserForm" class="form-grid" style="margin-top:15px"><input id="newName" required placeholder="نام و نام‌خانوادگی"><input id="newEmail" required type="email" placeholder="ایمیل"><input id="newPhone" placeholder="شماره موبایل"><input id="newPassword" required type="password" minlength="8" placeholder="رمز عبور حداقل ۸ کاراکتر"><select id="newRole"><option value="user">کاربر عادی</option><option value="admin">مدیر سایت</option></select><button class="btn btn-primary" type="submit">ایجاد حساب</button></form>
+<div id="users" style="margin-top:18px"></div></div>
+<div class="card" style="margin-bottom:24px"><h3>سفارش‌ها</h3><p class="hint">وضعیت هر سفارش را به‌روزرسانی کنید و در صورت وجود فایل، آن را دریافت کنید.</p><div id="orders" style="margin-top:15px"></div></div>
+<div class="card" style="margin-bottom:24px"><h3>پیام‌های تماس</h3><div id="messages" style="margin-top:15px"></div></div>
+<div class="card"><h3>دستیار فنی</h3><p class="hint">خطا یا مسئله فنی را توضیح دهید تا تحلیل، علت احتمالی، پیشنهاد اصلاح و تست‌های لازم ارائه شود. این ابزار مستقیماً سایت را تغییر نمی‌دهد.</p><textarea id="agentPrompt" rows="6" placeholder="مثلاً: بعد از انتشار، فرم سفارش برای بعضی کاربران خطای 500 می‌دهد."></textarea><button id="runAgent" class="btn btn-primary" style="margin-top:12px">تحلیل مسئله</button><pre id="agentOut" style="white-space:pre-wrap;line-height:1.8;margin-top:18px"></pre></div>
+</div></section>
+<div id="toast" class="toast"></div>
+<script src="/assest/js/app.js?v=20261028mobile"></script><script src="/assest/js/admin.js?v=20260911"></script>
+</body></html>

@@ -1,0 +1,40 @@
+[11-Sep-2026 19:26:05 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:195
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(195): setcookie()
+#1 {main}
+[11-Sep-2026 19:38:11 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:195
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(195): setcookie()
+#1 {main}
+[12-Sep-2026 00:08:31 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:215
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(215): setcookie()
+#1 {main}
+[12-Sep-2026 00:24:02 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:216
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(216): setcookie()
+#1 {main}
+[12-Sep-2026 00:24:18 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[12-Sep-2026 00:24:22 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[12-Sep-2026 00:26:23 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[12-Sep-2026 00:58:09 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:216
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(216): setcookie()
+#1 {main}
+[14-Sep-2026 01:30:15 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:216
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(216): setcookie()
+#1 {main}
+[14-Sep-2026 01:30:34 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[14-Sep-2026 01:41:16 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[14-Sep-2026 01:41:55 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[14-Sep-2026 01:42:38 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[14-Sep-2026 01:43:06 Asia/Tehran] RESEND_FAIL http=403 err= body={"statusCode":403,"message":"The amiraliswayzi.ir domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[07-Oct-2026 22:08:16 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:216
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(216): setcookie()
+#1 {main}
+[07-Oct-2026 22:16:07 Asia/Tehran] TypeError: setcookie(): Argument #4 ($path) must be of type string, array given in /home/ayziir/public_html/api/index.php:216
+Stack trace:
+#0 /home/ayziir/public_html/api/index.php(216): setcookie()
+#1 {main}
